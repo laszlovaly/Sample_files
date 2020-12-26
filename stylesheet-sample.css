@@ -1,0 +1,299 @@
+
+/* Main ************************************* */
+/* 
+* *::before *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+* {
+    box-sizing: border-box;
+}
+*::before *::after {
+    box-sizing: inherit;
+}
+
+
+/* 
+body {
+    background: rgb(252, 252, 160);
+    max-width: 760px;
+    position: relative;
+    margin: auto;
+    // Középre igazítja az egészet
+    Width: 98%;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    /* margin: 20px 0px 5px 15px; */
+}
+
+/* float ************************************ */
+
+.clearfix {
+    overflow: auto;
+    /*   Floating reset   */
+}
+
+#main-div {
+    background-color: lightseagreen;
+    float: left;
+    max-width: 90%;
+}
+
+
+#aside-div {
+    background-color: rgb(248, 203, 107);
+    float: left;
+    max-width: 10%;
+}
+
+
+/* Képek */
+
+img.big {
+    display: block;
+    margin: 50px auto 0px auto;
+    width: 70%;
+}
+
+img.centr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+        /* ez a három utasítás teszi középre a div-et  */
+}
+
+img.left-inline {
+    display: inline;
+    /* the default for span */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    float: left;
+}
+
+.head-pic>a>img {
+    background: cornflowerblue;
+    width: 95%;
+    padding: 1%;
+    margin: 0.5em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #888888;
+    box-shadow: 5px 5px 8px #888888; 
+
+}
+
+.pic-text {
+    padding: 10px;
+    background: cornflowerblue;
+}
+
+.link-background {
+    background: cornflowerblue;
+}
+
+
+
+
+/* Links******************************************* */
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:link {
+    color: #008643;
+    font-size: 1em;
+    line-height: 1.3em;
+    letter-spacing: 0em;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #405200;
+    font-size: 1em;
+    line-height: 1.3em;
+    letter-spacing: 0.3em;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a78000;
+    font-size: 1em;
+    line-height: 1.3em;
+    letter-spacing: 0em;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Pharagraphs ***************************************** */
+
+h1 {
+    /* background-color: rgb(183, 128, 255); */
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 100, 60);
+    text-align: left;
+    margin-left: 2em;
+    letter-spacing: 0px;
+    line-height: 2em;
+    /* white-space: nowrap; */
+}
+
+h2 {
+    /* background-color: chartreuse; */
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: normal;
+    font-family: verdana, sans-serif;
+    color: rgb(0, 85, 43);
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1;
+    word-spacing: 0px;
+    /* white-space: nowrap; */
+}
+
+h3 {
+    /* background-color: darkcyan; */
+    font-size: 1m;
+    font-style: normal;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(0, 100, 60);
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 0.8;
+    /* white-space: nowrap; */
+}
+
+h4 {
+    /* background-color: lightcoral; */
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    font-family: verdana, sans-serif;
+    color: rgb(1, 102, 55);
+    text-align: left;
+    vertical-align: left;
+    line-height: 1.8;
+    word-spacing: 0px;
+    /* white-space: nowrap; */
+}
+
+p {
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(11, 54, 0);
+    text-indent: 2.5em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+/*    ID ****************************************   */
+
+header {
+    /* background-color: blueviolet; */
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: auto; 
+}
+
+
+section {   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 50%;
+    min-width: 350px;
+    height: 42em;
+    margin: 0;
+    padding: 0;
+    /* background: coral; */
+}
+
+
+
+
+/* -------------- color schemas ------------ */
+
+.r {
+    background: red;
+}
+
+.b {
+    background: blue;
+}
+
+.y {
+    background: yellow;
+}
+
+.g {
+    background: green;
+}
+
+.p {
+    background: purple;
+} 
+
+.w {
+    background: white;
+} 
+
+.c {
+    background: cyan;
+} 
+
+.ws {
+    background: whitesmoke;
+} 
+
+.lb {
+    background: lightblue;
+} 
+
+.lc {
+    background: lightcoral;
+} 
+
+.lg {
+    background: lightgreen;
+} 
+
+.gr {
+    background: grey;
+} 
+
+.dy {
+    background: darkgoldenrod;
+} 
+
