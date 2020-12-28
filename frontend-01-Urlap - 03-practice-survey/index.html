@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <style>
+        textarea {
+            padding: 10px;
+            min-width: 300px;
+            line-height: 1.5;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 1px 1px 1px #999;
+        } 
+    </style>
+</head>
+
+<body>
+
+    <h1>Regisztrálj most, és találd meg a párod még ma!</h1>
+
+    <div id="registration">
+        <fieldset id="personalDataForm">
+            <legend> Személyes adatok </legend>
+            <form id="personalData">
+                <label for="fullName">Név: </label>
+                <input type="text" id="fullName" name="fullName" value="Add meg a neved" required> <br>
+                <label for="emailData">Email: </label>
+                <input type="email" id="emailData" name="emailData" value="Add meg az e-mail címed" required> <br>
+                <label for="city">Város: </label>
+                <input type="text" id="cityData" name="city" value="Hol laksz?"> <br>
+                <label for="ageData">Életkor: </label>
+                <input type="text" id="ageData" name="ageData" value="Hány éves vagy?" required> <br>
+                <label for="gender">Neme:</label><br>
+                <input type="radio" id="men" name="gender" value="men" checked>
+                <label for="men"> Férfi</label> <br>
+                <input type="radio" id="women" name="gender" value="women">
+                <label for="women"> Nő</label> <br>
+                <input type="radio" id="menWomen" name="gender" value="0">
+                <label for="menWomen"> Nem nyilatkozom</label> <br>
+                <label for="regDate">Regisztráció dátuma: </label>
+                <input type="date" id="regDate" name="date" value="2020-01-28">
+        </fieldset>
+
+        <fieldset id="searchGender">
+            <legend>Kit keresel?</legend>
+            <input type="checkbox" id="srcMen" name="search" value="men">
+            <label for="srcMen"> Férfiak</label> <br>
+            <input type="checkbox" id="srcWomen" name="search" value="women" checked>
+            <label for="srcWomen"> Nők</label> <br>
+        </fieldset>
+
+        <fieldset id="aboutMyself">
+            <legend>Írj magadról ...</legend>
+
+           <textarea  id="textMyself" name="myself" rows="5" cols=""> Szeretem a ... </textarea>
+
+        </fieldset>
+
+        <div>
+            <br> <button type="submit">Elküldöm</button>
+        </div>
+
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

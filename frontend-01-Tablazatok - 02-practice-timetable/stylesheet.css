@@ -1,0 +1,67 @@
+body {
+    background: rgb(252, 252, 160);
+    max-width: 760px;
+    position: relative;
+    /* margin: auto;
+    
+    Width: 98%; */
+}
+
+.wrap {
+    width: 750px;
+    width: 500px;
+       /* margin: 0 auto; */
+    background: white;
+    /*   Table cells will not wrap, only if one cell is the row     */
+}
+
+table {
+    border-spacing: 0.5rem;
+    /* border-collapse: collapse; */
+}
+
+caption {
+    background: aquamarine;
+}
+
+td, th {
+    border: 1px solid #444;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+/* td:nth-child(1) {    background: hsl(150, 50%, 50%);}
+td:nth-child(2) {    background: hsl(160, 60%, 50%);}
+td:nth-child(3) {    background: hsl(170, 70%, 50%);}
+td:nth-child(4) {    background: hsl(180, 80%, 50%);}
+td:nth-child(5) {    background: hsl(190, 90%, 50%);}
+td:nth-child(6) {    background: hsl(200, 99%, 50%);} */
+
+th {
+    background-color: rgb(183, 128, 255);
+    font-size: 1.0em;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 100, 60);
+    text-align: left;
+    margin-left: 2em;
+    letter-spacing: 0px;
+    line-height: 2em;
+    
+}
+
+
+td {
+    background-color: rgb(128, 236, 255);
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 100, 60);
+    text-align: left;
+    margin-left: 2em;
+    letter-spacing: 0px;
+    line-height: 1.2em;
+    
+}
