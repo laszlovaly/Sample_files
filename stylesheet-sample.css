@@ -30,16 +30,22 @@ body {
     padding: 0;
 }
 
+/* 
 * {
-    /* margin: 20px 0px 5px 15px; */
+    margin: 20px 0px 5px 15px; */
 }
 
 /* float ************************************ */
 
 .clearfix {
     overflow: auto;
+}    
+.clearfix::after {
+        content: "";   clear: both;
+        display: block; }
+
     /*   Floating reset   */
-}
+
 
 #main-div {
     background-color: lightseagreen;
